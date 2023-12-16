@@ -26,9 +26,9 @@ monaco: true
 css: unocss
 ---
 
-# Python 中可观测技术浅析
+# Why I think the Python 3.12 is the legend version in Python History
 
-我这次来只讲三件事：可观测，可观测，还是 TM 的可观测！
+Yes, It's the Legend!
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -39,15 +39,15 @@ src: ./pages/introduction.md
 ---
 
 ---
-src: ./pages/why-observability.md
+src: ./pages/the-problem-we-got.md
 ---
 
 ---
-src: ./pages/observability-self.md
+src: ./pages/the-python312-solutions.md
 ---
 
 ---
-src: ./pages/the-future.md
+src: ./pages/conclusion.md
 ---
 
 ---
