@@ -4,15 +4,15 @@ image-layout: image-right
 image: https://github.com/Zheaoli/pycon-china-2023-beijing/assets/7054676/eee7e3f7-1e00-4988-8646-ecb9722e816f
 ---
 
-#  What's the problem we are facing
+# The Challenges We Face with Python Before 3.12
 
-What's the problem we are facing is the Python before 3.12
+Exploring the limitations of Python prior to version 3.12.
 
 <v-clicks>
 
-1. The observable of Python before 3.12
-2. The ABI compatibility of Python before 3.12
-3. The performance of Python before 3.12 
+1. Observability in Python before 3.12
+2. ABI compatibility in earlier Python versions
+3. Performance issues in Python before 3.12
 
 </v-clicks>
 
@@ -20,31 +20,31 @@ What's the problem we are facing is the Python before 3.12
 transition: fade-out
 ---
 
-# What's the problem we are facing
+# Understanding the Challenges
 
-<h2>For now, I think you guys may have any idea about I'm talking about. Let's go find some example</h2>
+<h2>By now, you might have a sense of what I'm discussing. Let's explore some examples.</h2>
 
 ---
 transition: fade-out
 ---
 
-# What's the problem we are facing
+# Observability in Python Before 3.12
 
-<h2>The observable of Python before 3.12</h2>
+<h2>Observability in Python Before 3.12</h2>
 
-If we got a Python process. How can we know what's happening in the process?
+How do we understand what's happening in a Python process?
 
 <v-clicks>
 
-- We need monitor the exception in the process
-- We need to collect some execution information in the process and export it as the metric
-- etc...
+- Monitoring exceptions within the process
+- Collecting and exporting execution information as metrics
+- And more...
 
 </v-clicks>
 
 <v-click>
 
-What should we do?
+So, what's our approach?
 
 </v-click>
 
@@ -52,19 +52,17 @@ What should we do?
 transition: fade-out
 ---
 
-# What's the problem we are facing
+# ABI Compatibility Before Python 3.12
 
-<h2>案例二</h2>
+<h2>ABI Compatibility in Earlier Python Versions</h2>
 
-感谢 @yihong0618 大哥曾经给的灵感
-
-假设你有一个链接 PGSQL 的服务，你又在经历如下的困惑
+If you aim to write a Python extension compatible with multiple versions, what should you consider?
 
 <v-clicks>
 
-- 到 PGSQL 服务器延迟没有异常，但是你的查询时不时会玄学超时
-- 你本地的 CPU 时不时的玄学过山车
-- 你想知道在一个 SQL 从查询到返回的过程中，发生了什么，经历了哪些函数
+- Solutions like Cython or similar frameworks might work
+- However, attention to numerous details is crucial
+- Dealing with these details can be overwhelming
 
 </v-clicks>
 
@@ -72,13 +70,8 @@ transition: fade-out
 transition: fade-out
 ---
 
-# 为什么我们需要强调程序的可观测性
+# Performance in Python Before 3.12
 
-不知道你们发现没有，不知不觉中我已经把 Python 程序的可观测性变成程序的可观测性了
+You probably know what's coming next.
 
-<v-clicks>
-
-- 是的，我们今天会继续以 Python 作为样例来讨论一些可观测性的手段和思路（
-- 本人擅长挂羊头卖狗肉
-
-</v-clicks>
+**The GIL**!
